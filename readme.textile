@@ -6,26 +6,28 @@ h2. Usage
 
 h3. Setup
 
-pre.  Socky::Base.setup do |config|
-    config.host  = "somewhere.com"
-    config.port  = 12345
-    config.debug = true
-    config.rescue_retries = 3
-    config.rescue_classes = [ Socky::Errors::Timeout, Socky::Errors::Socket ]
-  end
+pre. Socky::Base.setup do |config|
+  config.host  = "somewhere.com"
+  config.port  = 12345
+  config.debug = true
+  config.rescue_retries = 3
+  config.rescue_classes = [ Socky::Errors::Timeout, Socky::Errors::Socket ]
+end
 
 
 h3. Normal usage
 
-request = Socky.new
+pre.request = Socky.new
 request.data << "some data"
 request.make!
 
 
 h3. Block usage
 
-Socky::Base.send do |data|
-  
+Block usage is also allowed, socket data will be written at the end of the block.
+
+pre. Socky::Base.send do |data|
   data << "some data"
-  
 end # sends data and end of block
+
+Josh Nesbitt / "josh@josh-nesbitt.net":mailto:josh@josh-nesbitt.net / "josh-nesbitt.net":http://josh-nesbitt.net
