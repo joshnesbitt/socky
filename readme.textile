@@ -17,9 +17,9 @@ end
 
 h3. Normal usage
 
-pre. request = Socky.new
-request.data << "some data"
-request.make!
+pre. sock = Socky.new
+sock.data << "some data"
+sock.make!
 
 
 h3. Block usage
@@ -28,6 +28,7 @@ Block usage is also allowed, socket data will be written at the end of the block
 
 pre. Socky::Base.send do |data|
   data << "some data"
-end # sends data and end of block
+end # send data
+
 
 Josh Nesbitt / "josh@josh-nesbitt.net":mailto:josh@josh-nesbitt.net / "josh-nesbitt.net":http://josh-nesbitt.net

@@ -1,5 +1,6 @@
 require 'socket'
 require 'rubygems'
+require 'active_support'
 
 module Socky
   class Base
