@@ -17,7 +17,7 @@ end
 
 h3. Normal usage
 
-pre.request = Socky.new
+pre. request = Socky.new
 request.data << "some data"
 request.make!
 
