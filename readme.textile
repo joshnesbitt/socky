@@ -6,7 +6,7 @@ h2. Usage
 
 h3. Setup
 
-Socky::Base.setup do |config|
+pre.  Socky::Base.setup do |config|
   
   config.host  = "somewhere.com"
   config.port  = 12345
