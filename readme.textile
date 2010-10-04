@@ -17,7 +17,7 @@ end
 
 h3. Normal usage
 
-pre. sock = Socky.new
+pre. sock = Socky::Base.new
 sock.data << "some data"
 sock.make!
 
