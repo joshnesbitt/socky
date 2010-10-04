@@ -8,14 +8,14 @@ h3. Setup
 
 pre.  Socky::Base.setup do |config|
   
-  config.host  = "somewhere.com"
-  config.port  = 12345
-  config.debug = true
-  config.rescue_retries = 3
-  config.rescue_classes = [ Socky::Errors::Timeout,
-                            Socky::Errors::Socket ]
+    config.host  = "somewhere.com"
+    config.port  = 12345
+    config.debug = true
+    config.rescue_retries = 3
+    config.rescue_classes = [ Socky::Errors::Timeout,
+                              Socky::Errors::Socket ]
   
-end
+  end
 
 
 h3. Normal usage
